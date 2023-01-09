@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rowdies&display=swap');
+
 .bg-color {
     background-color: skyblue;
 }
@@ -23,6 +25,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+h1 {
+    font-family: Rowdies;
+}
+
+h2 {
+    font-family: "Roboto Mono";
 }
 
 footer {
