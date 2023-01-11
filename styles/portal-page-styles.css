@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rowdies&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#body-content {
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+header {
+    border-radius: 20px;
+}
+
+#header-content {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family: Rowdies;
+}
+
+h2 {
+    font-family: "Roboto Mono";
+}
+
+footer {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#footer-content {
+    padding: 10px;
+}
+
+#footer-info {
+    display: flex;
+}
+
+img {
+    border-radius: 20px;
+}
+
+main {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.line {
+    padding: 2px;
+    background-color: black;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 15px;
+    height: 25px;
+}
+
+#last-updated {
+    color: yellow;
+}
+
+main ul li {
+    margin-top: 5px;
+}
