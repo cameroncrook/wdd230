@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rowdies&display=swap');
 
-body {
+/* body {
     display: flex;
     justify-content: center;
-}
+} */
 
 #body-content {
     width: 500px;
@@ -25,10 +25,12 @@ header {
 
 h1 {
     font-family: Rowdies;
+    font-size: 40px;
 }
 
 h2 {
     font-family: "Roboto Mono";
+    font-size: 30px;
 }
 
 footer {
@@ -48,6 +50,7 @@ footer {
 
 img {
     border-radius: 20px;
+    width: 150px;
 }
 
 main {
@@ -71,4 +74,11 @@ main {
 
 main ul li {
     margin-top: 5px;
+    font-size: 20px;
+    font-family: "Roboto Mono";
 }
+
+h3 {
+    font-family: Rowdies;
+}
+
