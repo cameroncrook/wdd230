@@ -2,6 +2,10 @@
     background-color: skyblue;
 }
 
+.bg-color-secondary {
+    background-color: #70C6CD;
+}
+
 img {
     max-width: 100%;
 }
