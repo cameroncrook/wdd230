@@ -1,0 +1,119 @@
+h1, h2, h3, h4, h5 {
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+header {
+    padding: 25px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#logo {
+    width: 300px;
+}
+
+#audience {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: lightcyan;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 6vw;
+}
+
+.grid-header {
+    text-align: center;
+}
+
+#color-primary {
+    background-color: #1c5373;
+    width: 25%;
+    height: 25px;
+}
+
+#color-secondary {
+    background-color: #507a41;
+    width: 25%;
+    height: 25px;
+}
+
+#text-color-main {
+    font-size: 20px;
+    font-weight: bold;
+    width: 25%;
+    height: 25px;
+}
+
+#text-color-secondary {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #1c5373;
+    height: 25px;
+    width: 25%;
+}
+
+#font-headers {
+    font-family: Georgia, 'Times New Roman';
+    font-size: 20px;
+}
+
+#font-text {
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+footer {
+    padding: 25px;
+    text-align: right;
+}
+
+@media screen and (min-width: 700px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .grid-content {
+        grid-column: 2/4;
+    }
+}

@@ -14,73 +14,95 @@
     </head>
 
     <body>
-        <header>
+        <header class="bg-color">
             <h1>Star Valley Chamber of Commerce</h1>
             <h2>Site Plan</h2>
+            <nav>
+                <a href="#overview">Overview</a>
+                <a href="#audience">Targeted Audience</a>
+                <a href="#design">Design</a>
+            </nav>
         </header>
         <main>
-            <div id="overview">
-                <h2>Site Overview</h2>
-                <h3>Site Name:</h3>
-                <p>Star Valley Chamber of Commerce</p>
+            <section id="overview">
+                <div class="grid-header">
+                    <h2>Site Overview</h2>
+                </div>
+                <div class="grid-content">
+                    <h3>Site Name:</h3>
+                    <p>Star Valley Chamber of Commerce</p>
 
-                <h3>Site Purpose:</h3>
-                <p>A site where Star Valley, Cokeville, and Kemmer buisness owners can build a network
-                    with each other. We want to support local buisnesses by building a site where 
-                    current buisness news can be viewed and where local events can be advertised to get
-                    the best turnout for our local buisness owners.
-                </p>
+                    <h3>Site Purpose:</h3>
+                    <p>A site where Star Valley, Cokeville, and Kemmer buisness owners can build a network
+                        with each other. We want to support local buisnesses by building a site where 
+                        current buisness news can be viewed and where local events can be advertised to get
+                        the best turnout for our local buisness owners.
+                    </p>
 
-                <h3>Domain Name:</h3>
-                <p>svchamber.com</p>
+                    <h3>Domain Name:</h3>
+                    <p>svchamber.com</p>
 
-                <h3>Logo:</h3>
-                <img src="images/SVChamber_outlines_Logo2017.png" alt="SV Chamber Logo" width="90">
-            </div>
-            <div id="audience">
-                <h2>Audience</h2>
-                <h3>Target Audience</h3>
-                <p>local (Star Valley, Cokeville, Kemmer) buisness owners.
-                    These could be small vendors to larger buisness that exist within these areas.
-                </p>
+                    <h3>Logo:</h3>
+                    <img id="logo" src="images/SVChamber_outlines_Logo2017.png" alt="SV Chamber Logo" width="90">
+                </div>
+            </section>
+            <section id="audience">
+                <div class="grid-header">
+                    <h2>Audience</h2>
+                </div>
+                <div class="grid-content">
+                    <h3>Target Audience</h3>
+                    <p>local (Star Valley, Cokeville, Kemmer) buisness owners.
+                        These could be small vendors to larger buisness that exist within these areas.
+                    </p>
 
-                <h3>Personas</h3>
-                <h4>Local Resident</h4>
-                <p>Individuals who live within the local area. These individuals can use the 
-                    site to keep up to date with local buisness news as well as see what events are
-                    coming up in the area.
-                </p>
-                <h4>Local Buisness Owner</h4>
-                <p>Individuals who live locally and who own a buisness. These individuals
-                    will mainly use the site to see what other buisness are doing to inovate and
-                    to connect with other buisness owners.
-                </p>
+                    <h3>Personas</h3>
+                    <h4>Local Resident</h4>
+                    <img src="images/aGoon.jpg" alt="A Clown" width="150">
+                    <p>Individuals who live within the local area. These individuals can use the 
+                        site to keep up to date with local buisness news as well as see what events are
+                        coming up in the area.
+                    </p>
+                    <h4>Local Buisness Owner</h4>
+                    <p>Individuals who live locally and who own a buisness. These individuals
+                        will mainly use the site to see what other buisness are doing to inovate and
+                        to connect with other buisness owners.
+                    </p>
 
-                <h3>Scenerios</h3>
-                <ul>
-                    <li>What buisnesses are in my area?</li>
-                    <li>What events are happening soon?</li>
-                    <li>How many cups of sugar does it take to get to the moon?</li>
-                    <li>view local news</li>
-                    <li>What are some cool sights to see in the area?</li>
-                </ul>
+                    <h3>Scenerios</h3>
+                    <ul>
+                        <li>What buisnesses are in my area?</li>
+                        <li>What events are happening soon?</li>
+                        <li>How many cups of sugar does it take to get to the moon?</li>
+                        <li>view local news</li>
+                        <li>What are some cool sights to see in the area?</li>
+                    </ul>
+                </div>
 
-            </div>
-            <div id="design">
-                <h2>Design</h2>
-                <h3>Color Schema</h3>
-                <p>Primary Color: #1c5373</p>
-                <p>Secondary Color: #507a41</p>
-                <p>Text Color: #000000</p>
-                <p>Text Color W/ Background: #FFFFFF</p>
+            </section>
+            <section id="design">
+                <div class="grid-header">
+                    <h2>Design</h2>
+                </div>
+                <div class="grid-content">
+                    <h3>Color Schema</h3>
+                    <p>Primary Color: #1c5373</p>
+                    <div id="color-primary"></div>
+                    <p>Secondary Color: #507a41</p>
+                    <div id="color-secondary"></div>
+                    <p>Text Color: #000000</p>
+                    <div id="text-color-main"><p>Color</p></div>
+                    <p>Text Color W/ Background: #FFFFFF</p>
+                    <div id="text-color-secondary"><p>Color</p></div>
 
-                <h3>Typography</h3>
-                <p>Headers: Georgia</p>
-                <p>Text: Helvetica</p>
-
-            </div>
+                    <h3>Typography</h3>
+                    <p>Headers: <p id="font-headers">Georgia</p></p>
+                    <p>Text:</p>
+                    <p id="font-text">Helvetica</p>
+                </div>
+            </section>
         </main>
-        <footer>
+        <footer class="bg-color">
             <p>&copy; Cameron and Sons LLC</p>
         </footer>
     </body>
