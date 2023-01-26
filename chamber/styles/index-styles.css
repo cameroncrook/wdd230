@@ -1,0 +1,126 @@
+/* Header Styles 
+---------------------------------------------- */
+header {
+    background-color: lightgray;
+    padding: 25px;
+}
+
+/* Hamburger menu */
+header nav {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav a {
+    display: none;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+
+header nav a:first-child {
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+}
+
+#header-logo {
+    width: 100%;
+}
+
+#linkedin-logo {
+    background-color: white;
+}
+
+/* Footer Styles 
+---------------------------------------------- */
+footer {
+    background-color: #1c5373;
+    color: white;
+    padding: 25px;
+}
+
+footer div a {
+    text-decoration: none;
+    color: white;
+}
+
+footer div a:hover {
+    text-decoration: underline;
+}
+
+#footer-contact-n-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-logo {
+    width: 175px;
+}
+
+.responsive a {
+    display: block;
+    /* text-decoration: none;
+    color: black; */
+    font-size: 25px;
+    padding: 5px;
+}
+
+
+@media screen and (min-width: 725px) {
+    /* Header Styles 
+    ---------------------------------------------- */
+    #header-logo {
+        width: 35vw;
+    }
+
+    header nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    header nav a {
+        display: block;
+        /* text-decoration: none;
+        font-size: 30px;
+        color: black; */
+    }
+
+    header nav a:first-child {
+        display: none;
+    }
+
+    /* nav a {
+        text-decoration: none;
+        font-size: 30px;
+        color: black;
+    } */
+
+    /* nav {
+        display: flex;
+        justify-content: space-evenly;
+    } */
+
+    /* Footer Styles 
+    ---------------------------------------------- */
+    #footer-contact-n-logo {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #footer-stuff {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .line-spacer {
+        background-color: white;
+        width: 1px;
+        height: 30px;
+        align-self: center;
+    }
+}
+
