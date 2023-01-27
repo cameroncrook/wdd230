@@ -14,21 +14,23 @@
 
 <body>
     <header>
-        <img id="header-logo" src="images/SVChamber_outlines_Logo2017.png" width="200" alt="Star Valley Chamber of Commerce Logo">
-        <p>Building Buisness. Building You</p>
-        <div id="social-media-logos">
-            <img id="facebook-logo" src="images/f_logo_RGB-Blue_58.png" width="35" alt="Facebook Logo">
-            <img id="linkedin-logo" src="images/In-Blue-72.png" width="35" alt="LinkedIn Logo">
+        <div id="header-flex">
+            <img id="header-logo" src="images/SVChamber_outlines_Logo2017.png" width="200" alt="Star Valley Chamber of Commerce Logo">
+            <div id="social-media-logos">
+                <img id="facebook-logo" src="images/f_logo_RGB-Blue_58.png" width="35" alt="Facebook Logo">
+                <img id="linkedin-logo" src="images/In-Blue-72.png" width="35" alt="LinkedIn Logo">
+            </div>
+            <nav class="navigation">
+                <a class="ham" href="#">&#9776;</a>
+                <a href="">Discover</a>
+                <a href="">Directory</a>
+                <a href="">Join</a>
+                <a href="">Contact</a>
+            </nav>
         </div>
-        <div class="current_time">
+        <div id="current-time">
+            <p id="date"></p>
         </div>
-        <nav class="navigation">
-            <a class="ham" href="#">&#9776;</a>
-            <a href="">Discover</a>
-            <a href="">Directory</a>
-            <a href="">Join</a>
-            <a href="">Contact</a>
-        </nav>
     </header>
     <main>
         <section id="hero-section">
@@ -60,13 +62,13 @@
     </main>
     <footer>
         <div id="footer-contact-n-logo">
-            <a href="https://goo.gl/maps/6De9tLDUxd9RQnow9" target="_blank">
+            <a id="address" href="https://goo.gl/maps/6De9tLDUxd9RQnow9" target="_blank">
                 <p id="address_first_line">360 Washington St,</p>
                 <p>Afton, WY</p>
                 <p>83110</p>
             </a>
             <img id="footer-logo" src="images/SVChamber_outlines_Logo2017 white copy.png" width="100" alt="Star Valley Chamber of Commerce Logo">
-            <p>(307) 885-2759</p>
+            <p id="phone-number">(307) 885-2759</p>
         </div>
         <hr>
         <div id="footer-stuff">
