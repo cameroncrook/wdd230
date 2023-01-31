@@ -1,5 +1,10 @@
 /* Header Styles 
 ---------------------------------------------- */
+
+img {
+    max-width: 100%;
+}
+
 header {
     padding: 25px;
 }
@@ -75,6 +80,16 @@ section {
     padding: 10px;
     border: solid;
     border-color: darkgray;
+}
+
+#hero-section {
+    position: relative;
+}
+
+#welcome {
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }
 
 #spotlight-3 {
