@@ -20,13 +20,18 @@ const timeDiv = document.querySelector('#date');
 
 let currentDate = new Date();
 let currentMonth = currentDate.getMonth();
-let currentDay = currentDate.getDay();
+let dayNum = currentDate.getDay();
 let dayOfMonth = currentDate.getDate();
 
 const months = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December'];
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-currentDay = days[currentDay];
+let currentDay = days[dayNum];
 currentMonth = months[currentMonth];
 
 timeDiv.textContent = `${currentDay}, ${dayOfMonth} ${currentMonth} ${year}`;
+
+notificationEl = document.querySelector('#notification');
+if (dayNum == 1 || dayNum == 2) {
+    notificationEl.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
+}
