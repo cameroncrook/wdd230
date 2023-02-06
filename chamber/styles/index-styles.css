@@ -94,7 +94,7 @@ main p {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto, repeat(6, 250px);
+    grid-template-rows: auto repeat(6, 250px);
 }
 
 section {
