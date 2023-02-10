@@ -120,6 +120,7 @@ section {
     position: absolute;
     top: 20px;
     left: 50px;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
 
 .join-btn {
@@ -168,13 +169,13 @@ section {
     width: 180px;
 }
 
-#weather-section {
+/* #weather-section {
     background-color: transparent;
     border: none;
     padding: 0;
     overflow: scroll;
     object-fit: cover;
-}
+} */
 
 #join-chamber-btn {
     background-color: #507a41;

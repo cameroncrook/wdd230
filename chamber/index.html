@@ -36,7 +36,12 @@
     </header>
     <main>
         <section id="hero-section">
-            <img id="star_valley" src="images/Afton_Arch.jpg" alt="Star Valley Elkhorn Arch">
+            <!-- <img id="star_valley" src="images/Afton_Arch.jpg" alt="Star Valley Elkhorn Arch"> -->
+            <picture>
+                <source srcset="images/Afton_LG.jpg" media="(min-width: 1100px)">
+                <source srcset="images/Afton_medium.jpg" media="(min-width: 725px)">
+                <img id="star_valley" src="images/Afton_small.jpg" alt="Star Valley Elkhorn Arch">
+            </picture>
             <h1 id="welcome">Welcome to Star Valley!</h1>
             <button class="join-btn">Join The Chamber</button>
         </section>
@@ -78,10 +83,20 @@
         </section>
         <section id="weather-section">
             <div id="weather-div">
-                <a class="weatherwidget-io" href="https://forecast7.com/en/42d72n110d93/afton/" data-label_1="Star Valley" data-label_2="WEATHER" data-theme="original" >Star Valley WEATHER</a>
+                <div>
+                    <img id="weather-icon" src="" alt="rain weather">
+                    <h3 id="temp"><span id="t">68</span>&#176;f</h3>
+                </div>
+                <div>
+                    <p id="desc">Partly Cloudy</p>
+                    <hr>
+                    <p>Wind Speed: <span id="ws"> 12.5</span>mph</p>
+                    <p>Wind Chill: <span id="wc"> N/A</span></p>
+                </div>
+                <!-- <a class="weatherwidget-io" href="https://forecast7.com/en/42d72n110d93/afton/" data-label_1="Star Valley" data-label_2="WEATHER" data-theme="original" >Star Valley WEATHER</a>
                 <script>
                 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-                </script>
+                </script> -->
             </div>
         </section>
     </main>

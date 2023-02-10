@@ -35,3 +35,14 @@ notificationEl = document.querySelector('#notification');
 if (dayNum == 1 || dayNum == 2) {
     notificationEl.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
 }
+
+// Calculate wind chill for weather section
+let temp = document.querySelector('#t').textContent;
+let windChillEl = document.querySelector('#wc');
+let windSpeed = document.querySelector('#ws').textContent;
+
+let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windSpeed,0.16)) + (0.4275*temp*Math.pow(windSpeed,0.16)));
+
+if (temp <= 50 && windSpeed >= 3) {
+    windChillEl.textContent = chill;
+}
