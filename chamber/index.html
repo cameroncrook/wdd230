@@ -83,14 +83,19 @@
         </section>
         <section id="weather-section">
             <div id="weather-div">
-                <div>
-                    <img id="weather-icon" src="" alt="rain weather">
-                    <h3 id="temp"><span id="t">68</span>&#176;f</h3>
+                <div id="temp-icon-div">
+                    <div>
+                        <img id="weather-icon" src="" alt="rain weather">
+                        <p id="desc"></p>
+                    </div>
+                    <div>
+                        <h3 id="temp"><span id="t"></span> &#176;f</h3>
+                        <p>Precipitation: <span id="prob"></span> %</p>
+                    </div>  
                 </div>
                 <div>
-                    <p id="desc">Partly Cloudy</p>
                     <hr>
-                    <p>Wind Speed: <span id="ws"> 12.5</span>mph</p>
+                    <p>Wind Speed: <span id="ws"></span>mph</p>
                     <p>Wind Chill: <span id="wc"> N/A</span></p>
                 </div>
                 <!-- <a class="weatherwidget-io" href="https://forecast7.com/en/42d72n110d93/afton/" data-label_1="Star Valley" data-label_2="WEATHER" data-theme="original" >Star Valley WEATHER</a>
@@ -122,5 +127,6 @@
         </div>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

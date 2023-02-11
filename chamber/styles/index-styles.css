@@ -192,6 +192,16 @@ section {
     width: 100px;
 }
 
+#weather-icon {
+    width: 50px;
+}
+
+#temp-icon-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 /* Footer Styles 
 ---------------------------------------------- */
 footer {
