@@ -104,6 +104,7 @@ section {
     border: solid;
     border-color: darkgray;
     text-align: center;
+    overflow: scroll;
 }
 
 #hero-section {
@@ -200,6 +201,12 @@ section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+#weather-desc-div {
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 /* Footer Styles 
