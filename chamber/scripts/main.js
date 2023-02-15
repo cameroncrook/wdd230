@@ -31,10 +31,10 @@ currentMonth = months[currentMonth];
 
 timeDiv.textContent = `${currentDay}, ${dayOfMonth} ${currentMonth} ${year}`;
 
-notificationEl = document.querySelector('#notification');
-if (dayNum == 1 || dayNum == 2) {
-    notificationEl.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
-}
+// notificationEl = document.querySelector('#notification');
+// if (dayNum == 1 || dayNum == 2) {
+//     notificationEl.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
+// }
 
 // Calculate wind chill for weather section
 // let temp = document.querySelector('#t').textContent;
@@ -46,3 +46,8 @@ if (dayNum == 1 || dayNum == 2) {
 // if (temp <= 50 && windSpeed >= 3) {
 //     windChillEl.textContent = chill;
 // }
+
+// Storage local and session variables
+
+localStorage.setItem('name', 'Cameron Crook - Permanent');
+sessionStorage.setItem('class', 'WDD230 - session');
