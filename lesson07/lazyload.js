@@ -1,10 +1,32 @@
-const images = document.querySelector('img');
+const images = document.querySelectorAll('[data-src]');
+
+// change to 0 after peer review
+const options = { threshold: .5 };
+
+function preloadImages(img) {
+    const source = img.getAttribute('data-src');
+    if(!source) {
+        return;
+    }
+
+    img.src = source;
+}
 
 const io = new IntersectionObserver (
-    (entries, io) => {
-        console.log(entries);
-        console.log(io);
-    }
+    (entries) => {
+        entries.forEach(entry => {
+            console.log(entries);
+            if(!entry.isIntersecting) {
+                return;
+            } else {
+                preloadImages(entry.target);
+                io.unobserve(entry.target);
+            }
+        })
+    },
+    options
 )
 
-io.observe(images);
+images.forEach(image => {
+    io.observe(image);
+})
