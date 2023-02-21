@@ -16,8 +16,13 @@ table, th, td {
 
 table {
     border: solid 1px black;
+    caption-side: bottom;
 }
 
 tbody tr:nth-of-type(even) {
     background-color: #ccc;
+}
+
+tbody th, td {
+    border: solid lightgray 1px;
 }
