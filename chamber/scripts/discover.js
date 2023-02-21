@@ -1,4 +1,4 @@
-const images = document.querySelectorAll('[data-src]');
+const images = document.querySelectorAll('img[data-src]');
 
 // change to 0 after peer review
 const options = { threshold: .5 };

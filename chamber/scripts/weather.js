@@ -32,7 +32,7 @@ async function renderData() {
 
     let chill = Math.round((35.74 + (0.6215 * tempurature))-(35.75 * Math.pow(windSpeed,0.16)) + (0.4275*tempurature*Math.pow(windSpeed,0.16)));
 
-    if (temp <= 50 && windSpeed >= 3) {
+    if (tempurature <= 50 && windSpeed >= 3) {
         windChillEl.textContent = chill;
     }
 
