@@ -1,0 +1,93 @@
+h1, h3 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 25px;
+}
+
+label, input {
+    display: block;
+    font-size: 1.5em;
+}
+
+label {
+    margin: 20px 0 0 0;
+}
+
+input {
+    height: 35px;
+}
+
+#membership label, #membership input {
+    display: inline;
+    font-size: 1em;
+}
+
+#membership input {
+    margin-left: 20px;
+}
+
+#submit-btn {
+    margin-top: 40px;
+}
+
+table {
+    width: 50%;
+    padding: 25px;
+    border: solid;
+    margin-top: 30px;
+}
+
+table, th, td {
+    text-align: center;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+thead {
+    background-color: #1c5373;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 880px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    table {
+        width: 80%;
+    }
+}
+
+/* Thank You Page Styles */
+#message-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#message-box {
+    border: solid;
+    background-color: #1c5373;
+    padding: 50px;
+    color: white;
+    width: 80%;
+}

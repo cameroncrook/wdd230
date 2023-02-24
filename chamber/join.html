@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber</title>
+    <link href="styles/index-styles.css" rel="stylesheet">
+    <link href="styles/join-styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="header-flex">
+            <img id="header-logo" src="images/SVChamber_outlines_Logo2017.png" width="200" alt="Star Valley Chamber of Commerce Logo">
+            <div id="social-media-logos">
+                <img id="facebook-logo" src="images/f_logo_RGB-Blue_58.png" width="35" alt="Facebook Logo">
+                <img id="linkedin-logo" src="images/In-Blue-72.png" width="35" alt="LinkedIn Logo">
+            </div>
+            <nav class="navigation">
+                <a class="ham" href="#">&#9776;</a>
+                <a href="discover.html">Discover</a>
+                <a href="">Directory</a>
+                <a href="">Join</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <h1 id="join-header">Join Our Chamber</h1>
+    <main>
+        <form method="get" action="thankyou.html">
+            <label for="fname">First Name *:</label>
+            <input id="fname" name="firstname" required>
+
+            <label for="lname">Last Name *:</label>
+            <input id="lname" name="lastname" required>
+
+            <label for="title">Buisness Position Title *:</label>
+            <input id="title" name="buisnessTitle" pattern="[A-Za-z -]+" minlength="7" required>
+
+            <label for="email">Email *:</label>
+            <input id="email" name="email" type="email" placeholder="name@domain.com" required>
+
+            <label for="phone">Phone *:</label>
+            <input id="phone" name="phone" type="tel" required>
+
+            <label for="buisness">Buisness Name *:</label>
+            <input id="buisness" name="buisness" required>
+
+            <label>Enter Your Membership Level
+                <div id="membership">
+                    <input type="radio" id="lvl1" name="member_lvl" value="level-1">
+                    <label for="level-1">NP Membership</label>
+                
+                    <input type="radio" id="lvl2" name="member_lvl" value="level-2">
+                    <label for="level-2">Bronze</label>
+
+                    <input type="radio" id="lvl3" name="member_lvl" value="level-3">
+                    <label for="level-3">Silver</label>
+
+                    <input type="radio" id="lvl4" name="member_lvl" value="level-4">
+                    <label for="level-4">Gold</label>
+                </div>
+            </label>
+
+            <input type="submit" value="Join the Chamber" src="thankyou.html" id="submit-btn">
+        </form>
+
+        <table>
+            <thead>
+                <tr class="table-head">
+                    <th colspan="3">Chamber Membership Levels</th>
+                </tr>
+                <tr class="table-head">
+                    <th>Level</th>
+                    <th>Features</th>
+                    <th>Fee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>NP Membership</th>
+                    <td>For non profit organizations and there is no fee.</td>
+                    <td>No Costs</td>
+                </tr>
+                <tr>
+                    <th>Bronze Membership</th>
+                    <td>15% discounts on events, 10% discount on advertising</td>
+                    <td>$50/month</td>
+                </tr>
+                <tr>
+                    <th>Silver Membership</th>
+                    <td>25% discount on events, 15% discount on advertising, Free participation in the trade fair</td>
+                    <td>$100/month</td>
+                </tr>
+                <tr>
+                    <th>Gold Membership</th>
+                    <td>50% discount on events, 50% discount on advertising, Free participation in the trade fair, 5 free featured ads per year, 1 free training per quarter</td>
+                    <td>$100/month</td>
+                </tr>
+                <tr>
+                    <td id="price-info" colspan="3">This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div id="footer-contact-n-logo">
+            <a id="address" href="https://goo.gl/maps/6De9tLDUxd9RQnow9" target="_blank">
+                <p id="address_first_line">360 Washington St,</p>
+                <p>Afton, WY</p>
+                <p>83110</p>
+            </a>
+            <img id="footer-logo" src="images/SVChamber_outlines_Logo2017_white_copy.png" width="100" alt="Star Valley Chamber of Commerce Logo">
+            <p id="phone-number">(307) 885-2759</p>
+        </div>
+        <hr>
+        <div id="footer-stuff">
+            <p id="copyright"></p>
+            <div class="line-spacer"></div>
+            <p>Cameron Crook</p>
+            <div class="line-spacer"></div>
+            <p>WDD 230 Project</p>
+            <div class="line-spacer"></div>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
