@@ -1,0 +1,10 @@
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.cards section {
+    margin: 25px;
+}
