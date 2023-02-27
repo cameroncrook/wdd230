@@ -28,17 +28,27 @@ input {
     height: 35px;
 }
 
-#membership label, #membership input {
+/* #membership label, #membership input {
     display: inline;
     font-size: 1em;
 }
 
 #membership input {
     margin-left: 20px;
+} */
+
+#membership {
+    display: grid;
+    grid-template-columns: 60px 150px;
+    font-size: 12px;
 }
 
-#submit-btn {
-    margin-top: 40px;
+#membership label {
+    margin: 0;
+}
+
+#membership input {
+    height: 20px;
 }
 
 table {
@@ -59,7 +69,24 @@ thead {
     color: white;
 }
 
+input[type='submit'] {
+    background-color: #1c5373;
+    color: white;
+    height: 55px;
+    margin-top: 40px;
+}
 
+#message {
+    height: 100px;
+}
+
+form input:required {
+    border-left: red solid 6px;
+}
+
+form input:required:valid {
+    border-left: green solid 6px;
+}
 
 @media screen and (max-width: 880px) {
     main {
