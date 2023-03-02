@@ -1,0 +1,74 @@
+{
+    "crooktec": {
+        "name": "Crooktec",
+        "address": "222 E 4th Ave, Afton, WY 83110",
+        "phone_number": "307-413-8310",
+        "website_url": "https://crooktec.com/",
+        "image": "images/logoGrayscale.png",
+        "membership": "Bronze"
+    },
+    "esteemed_bookkeeping": {
+        "name": "Esteemed Bookkeeping",
+        "address": "1130 Co Rd 105, Etna, WY 83118",
+        "phone_number": "385-266-8689",
+        "website_url": "https://esteemedbookkeeping.com/",
+        "image": "images/7343FB8F-1848-4EB5-8014-CD0B06E0795C.jpeg",
+        "membership": "Silver"
+    },
+    "red_baron": {
+        "name": "Red Baron",
+        "address": "838 Washington St, Afton, WY 83110",
+        "phone_number": "307-885-8624",
+        "website_url": "https://redbarondrivein.com/",
+        "image": "images/baronLOGO_red_starvalley.png",
+        "membership": "Gold"
+    },
+    "salt_river_ranch": {
+        "name": "Salt River Ranch",
+        "address": "1130 Co Rd 105, Etna, WY 83118",
+        "phone_number": "307-880-3352",
+        "website_url": "https://saltriverranch.com/",
+        "image": "images/salt_river_ranch.png",
+        "membership": "Bronze"
+    },
+    "crookfarm": {
+        "name": "CCrook Farm",
+        "address": "110511 US 89, Etna, WY 83118",
+        "phone_number": "307-880-3356",
+        "website_url": "https://ccrookfarm.com/",
+        "image": "images/BBCDE738-6803-4927-897C-8BAC5F2C13A8.jpeg",
+        "membership": "Bronze"
+    },
+    "svi_media": {
+        "name": "SVI Media",
+        "address": "360 South Washington 83110  Afton, Wyoming",
+        "phone_number": "307-885-5727",
+        "website_url": "https://svinews.com/",
+        "image": "images/svi_media.png",
+        "membership": "Gold"
+    },
+    "rocky_mountain_yeti": {
+        "name": "Rocky Mountain Yeti",
+        "address": "1046 S. Washington Street, Afton, WY 83110",
+        "phone_number": "307-335-4405",
+        "website_url": "https://www.rockymountainyetiafton.com/",
+        "image": "images/yeti.png",
+        "membership": "Gold"
+    },
+    "bank_of_star_valley": {
+        "name": "Bank of Star Valley",
+        "address": "384 Washington P.O. Box 8007 Afton, WY 83110",
+        "phone_number": "(307) 885-0000",
+        "website_url": "https://www.bosv.com/",
+        "image": "images/bosv.avif",
+        "membership": "Gold"
+    },
+    "minuteman_supply": {
+        "name": "Wyoming Minuteman Supply",
+        "address": "384 Washington P.O. Box 8007 Afton, WY 83110",
+        "phone_number": "(307) 885-0000",
+        "website_url": "https://www.wyms.co/",
+        "image": "images/wyms.jpeg",
+        "membership": "Gold"
+    }
+}

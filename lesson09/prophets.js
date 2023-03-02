@@ -5,7 +5,7 @@ async function getProphetData() {
     const data = await response.json();
     //console.table(data.prophets);  // note that we reference the prophet array of the data object given the structure of the json file
 
-    displayProphets(data.prophets);
+    displayTable(data.prophets);
   }
   
 
@@ -38,3 +38,23 @@ const displayProphets = (prophets) => {
     }) // end of forEach loop
 } // end of function expression
 
+function displayTable(prophets) {
+  prophets.forEach((prophet) => {
+    let tr = document.createElement('tr');
+    let tdName = document.createElement('td');
+    let tdBirthPlace = document.createElement('td');
+    let tdBirthDate = document.createElement('td');
+
+    tdName.textContent = `${prophet.name} ${prophet.lastname}`;
+    tdBirthPlace.textContent = prophet.birthplace;
+    tdBirthDate.textContent = prophet.birthdate;
+
+    tr.appendChild(tdName);
+    tr.appendChild(tdBirthPlace);
+    tr.appendChild(tdBirthDate);
+
+    let table = document.querySelector('table');
+
+    table.appendChild(tr);
+  })
+}

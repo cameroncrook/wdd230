@@ -1,0 +1,68 @@
+/* Cards View Styles */
+#cards-view {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+}
+
+.card {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+}
+
+.card img {
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#view {
+    display: flex;
+    justify-content: center;
+}
+
+#view img {
+    margin: 10px;
+    width: 50px;
+}
+
+#view img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Table Styles */
+
+/* table {
+    display: none;
+} */
+
+/* Displays */
+.display-off {
+    display: none !important;
+}
+
+@media screen and (min-width: 725px) {
+    #cards-view {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #cards-view {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* for table, use display block for phone view and table-cell for larger screen */
