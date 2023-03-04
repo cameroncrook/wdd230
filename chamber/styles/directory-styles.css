@@ -4,6 +4,7 @@
     gap: 30px;
     grid-template-columns: 1fr;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .card {
@@ -44,9 +45,37 @@ img {
 
 /* Table Styles */
 
-/* table {
-    display: none;
-} */
+thead th {
+    background-color: rgb(92, 86, 93);
+    color: white;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    border: solid 1px black;
+    caption-side: bottom;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+#table-div {
+    width: 100%;
+    overflow-x: auto;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #ccc;
+}
+
+tbody th, td {
+    border: solid lightgray 1px;
+}
 
 /* Displays */
 .display-off {

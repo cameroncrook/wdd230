@@ -10,14 +10,14 @@ getBuisnessData()
 
 document.querySelector('#card-view-button').addEventListener('click', function(){
     const cardsDiv = document.querySelector('#cards-view');
-    const table = document.querySelector('#buisness-table');
+    const table = document.querySelector('table');
 
     table.classList.add('display-off');
     cardsDiv.classList.remove('display-off');
 })
 
 document.querySelector('#table-view-button').addEventListener('click', function(){
-    const table = document.querySelector('#buisness-table');
+    const table = document.querySelector('table');
     const cardsDiv = document.querySelector('#cards-view');
 
     cardsDiv.classList.add('display-off');
@@ -102,6 +102,7 @@ function occupyBuisnessesTable(buisnesses) {
         let tdAddress = document.createElement('td');
         let tdPhone = document.createElement('td');
         let tdWebsite = document.createElement('td');
+        let aWebsite = document.createElement('a');
 
         tdName.textContent = name;
         tr.appendChild(tdName)
@@ -112,7 +113,10 @@ function occupyBuisnessesTable(buisnesses) {
         tdPhone.textContent = phoneNum;
         tr.appendChild(tdPhone);
 
-        tdWebsite.textContent = website;
+        aWebsite.textContent = website;
+        aWebsite.setAttribute('href', website);
+
+        tdWebsite.appendChild(aWebsite);
         tr.appendChild(tdWebsite);
 
         table.appendChild(tr);
