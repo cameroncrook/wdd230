@@ -56,6 +56,7 @@ function occupyBuisnesses(buisnesses) {
 
         photo.setAttribute('src', logoIMG);
         photo.setAttribute('alt', name);
+        photo.setAttribute('width', '200');
         card.appendChild(photo);
 
         h2.textContent = name;
