@@ -1,9 +1,11 @@
+// https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Afton%2C%20WY?unitGroup=us&include=current&key=F3BEE7JMALCR454A9UKPJAPC5&contentType=json
+// https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Afton%2C%20WY?unitGroup=metric&include=current&key=F3BEE7JMALCR454A9UKPJAPC5&contentType=json
 async function getData() {
     let requestOptions = {
         method: 'GET',
         redirect: 'follow'
     };
-    let url = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Afton%2C%20WY?unitGroup=metric&include=current&key=F3BEE7JMALCR454A9UKPJAPC5&contentType=json';
+    let url = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Afton%2C%20WY?unitGroup=us&include=current&key=F3BEE7JMALCR454A9UKPJAPC5&contentType=json';
     try {
         let res = await fetch(url, requestOptions);
         return await res.json();
@@ -21,6 +23,10 @@ async function renderData() {
     const precip = days["precipprob"];
     const icon = days["icon"];
     const condition = days["conditions"];
+
+    // Fix temp
+    // let t = data.currentConditions.temp;
+    // document.querySelector('#t').textContent = Math.round(t * 5/9 +32 );
 
     // Calculate wind chill for weather section
     let tempEl = document.querySelector('#t');
