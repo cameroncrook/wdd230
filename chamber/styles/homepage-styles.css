@@ -4,6 +4,10 @@ main h1 {
     font-family: Georgia;
 }
 
+#home-h1 {
+    display: none;
+}
+
 main h3 {
     font-size: 25px;
     font-family: Georgia;
