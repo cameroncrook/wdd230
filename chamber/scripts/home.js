@@ -37,15 +37,12 @@ function displaySpotlights(goldMembers, buisnesses) {
         }
     }
 
-    console.log(indexValues);
-
     i = 1;
     indexValues.forEach(index => {
         let buisness = goldMembers[index];
         // console.log(i);
 
         let buisnessData = buisnesses[buisness];
-        console.log(buisnessData);
 
         let img = document.querySelector(`#img-${i}`);
         img.setAttribute('src', buisnessData.image);
