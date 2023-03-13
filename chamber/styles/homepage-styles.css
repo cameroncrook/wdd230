@@ -21,7 +21,7 @@ main p {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(6, 250px);
+    grid-template-rows: auto repeat(6);
 }
 
 section {
@@ -58,7 +58,7 @@ section {
     padding: 15px;
     border-radius: 25px;
     font-size: 25px;
-    background-color: #507a41;
+    background-color: #1c5373;
 }
 
 .join-btn:hover {
@@ -85,17 +85,22 @@ section {
     grid-template-rows: 1fr 1fr;
 }
 
+#spotlight-section img {
+    max-height: 100px;
+    margin-top: 5px;
+}
+
 #spotlight-section div {
     background-color: white;
 }
 
-#spotlight-3 img {
+/* #spotlight-3 img {
     width: 180px;
 }
 
 #spotlight-2 img {
     width: 180px;
-}
+} */
 
 /* #weather-section {
     background-color: transparent;
@@ -106,13 +111,17 @@ section {
 } */
 
 #join-chamber-btn {
-    background-color: #507a41;
+    background-color: #1c5373;
     padding: 10px;
     border-radius: 25px;
     border: solid;
     width: 75%;
     margin: 20px;
     font-size: 20px;
+}
+
+#join-chamber-btn:hover {
+    background-color: darkgray;
 }
 
 #baron-logo {
@@ -142,7 +151,7 @@ section {
     ---------------------------------------------- */
     main {
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: repeat(5, 250px);
+        grid-template-rows: repeat(5, 270px);
     }
 
     #hero-section {
@@ -178,12 +187,18 @@ section {
     ---------------------------------------------- */
     main {
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: repeat(3, 250px);
+        grid-template-rows: repeat(3, 270px);
     }
 
     #hero-section {
         grid-column: 2/3;
         grid-row: 1/3;
+        background-image: url("/chamber/images/Afton_Arch.jpg");
+        background-position: center;
+    }
+
+    #hero-section picture {
+        display: none;
     }
 
     #welcome {

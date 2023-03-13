@@ -1,6 +1,14 @@
 /* Header Styles 
 ---------------------------------------------- */
 
+main h1, main h2, main h3, main h4, main h5, main h6 {
+    font-family: Georgia;
+}
+
+main p {
+    font-family: Helvetica;
+}
+
 img {
     max-width: 100%;
 }

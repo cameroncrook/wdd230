@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A page containing 8 prominent buisness in Star Valley">
+    <meta name="description" content="Office Hours and other methods of contacting the Star Valley Chamber of Commerce">
     <meta name="author" content="Cameron Crook">
-    <link rel="icon" type="image/png" href="favicon.ico">
-    <title>Buisness Directory</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="styles/index-styles.css">
-    <link rel="stylesheet" href="styles/directory-styles.css">
+    <link rel="stylesheet" href="styles/contact-styles.css">
 </head>
 <body>
     <header>
@@ -23,38 +22,51 @@
                 <a class="ham" href="#">&#9776;</a>
                 <a href="index.html">Home</a>
                 <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
-                <a href="contact.html">Contact</a>
             </nav>
         </div>
         <div id="current-time">
             <p id="date"></p>
         </div>
     </header>
-    <h1>Star Valley Buisnesses</h1>
-    <div id="view">
-        <img src="images/002-image.png" id="card-view-button" alt="Cards View">
-        <img src="images/001-cells.png" id="table-view-button" alt="Table View">
-    </div>
+    <h1>Contact Us!</h1>
     <main>
-        <div id="cards-view" class="">
-        </div>
-
-        <div id="table-div">
-        <table class="display-off">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Address</th>
-                    <th>Phone Number</th>
-                    <th>Website URL</th>
-                </tr>
-            </thead>
-            <tbody id="buisness-table">
-
-            </tbody>
-        </table>
-        </div>
+        <section id="contact-info">
+            <h3>Phone Number</h3>
+            <p id="phone-number" class="last-line">(307) 885-2759</p>
+            <h3>Office Hours</h3>
+            <p>Monday - Friday</p>
+            <p class="last-line">8AM - 5PM</p>
+            <h3>Address</h3>
+            <a id="address" class="last-line" href="https://goo.gl/maps/6De9tLDUxd9RQnow9" target="_blank">
+                <p id="address_first_line">360 Washington St,</p>
+                <p>Afton, WY</p>
+                <p>83110</p>
+            </a>
+        </section>
+        <section id="contact-form">
+            <h2>Send us a Message</h2>
+            <form method="get" action="thankyou.html">
+                <label for="fname">First Name *:</label>
+                <input id="fname" name="firstname" required>
+    
+                <label for="lname">Last Name *:</label>
+                <input id="lname" name="lastname" required>
+    
+                <label for="email">Email *:</label>
+                <input id="email" name="email" type="email" placeholder="name@domain.com" required>
+    
+                <label for="phone">Phone:</label>
+                <input id="phone" name="phone" type="tel">
+    
+                <label for="message">Message:</label>
+                <textarea id="message"></textarea>
+                <input id="date" type="hidden" name="todaydate">
+    
+                <input type="submit" value="Send Message" formaction="thankyou.html" id="submit-btn">
+            </form>
+        </section>
     </main>
     <footer>
         <div id="footer-contact-n-logo">
@@ -78,6 +90,5 @@
         </div>
     </footer>
     <script src="scripts/main.js"></script>
-    <script src="scripts/directory.js"></script>
 </body>
 </html>
