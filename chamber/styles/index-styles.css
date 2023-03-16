@@ -20,7 +20,7 @@ header {
 #header-flex {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #header-logo {
@@ -28,9 +28,7 @@ header {
 }
 
 #social-media-logos {
-    display: flex;
-    justify-content: end;
-    margin-right: 20px;
+    display: none;
 }
 
 #facebook-logo {
@@ -52,6 +50,14 @@ header {
 header nav {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    z-index: 1;
+}
+
+.ham-link {
+    background-color: white;
 }
 
 header nav a:hover {
@@ -129,12 +135,24 @@ footer div a:hover {
 @media screen and (min-width: 725px) {
     /* Header Styles 
     ---------------------------------------------- */
+    #header-flex {
+        justify-content: space-evenly;
+    }
+
     #header-logo {
         width: 200px;
     }
 
     #social-media-logos {
-        margin-right: 0;
+        display: flex;
+        justify-content: end;
+        margin-right: 0px;
+    }
+
+    header nav {
+        display: block;
+        right: inherit;
+        left: inherit;
     }
 
     /* Footer Styles 
@@ -179,7 +197,9 @@ footer div a:hover {
     }
 
     header nav {
+        display: flex;
         flex-direction: row;
+        position: static;
     }
 
     header nav a {
@@ -187,7 +207,15 @@ footer div a:hover {
         margin-left: 2vw;
     }
 
+    .ham-link {
+        padding: 0px;
+    }
+
     header nav a:first-child {
         display: none;
+    }
+    
+    .ham-link {
+        background-color: transparent;
     }
 }
