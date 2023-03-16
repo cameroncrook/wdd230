@@ -21,7 +21,7 @@ main p {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(6);
+    grid-template-rows: repeat(7);
 }
 
 section {
@@ -32,6 +32,12 @@ section {
     border-color: darkgray;
     text-align: center;
     overflow: scroll;
+}
+
+section a {
+    text-decoration: none;
+    color: white;
+    border: solid;
 }
 
 #hero-section {
@@ -110,17 +116,17 @@ section {
     object-fit: cover;
 } */
 
-#join-chamber-btn {
+.join-chamber-btn {
     background-color: #1c5373;
     padding: 10px;
     border-radius: 25px;
     border: solid;
     width: 75%;
-    margin: 20px;
+    margin-top: 20px;
     font-size: 20px;
 }
 
-#join-chamber-btn:hover {
+.join-chamber-btn:hover {
     background-color: darkgray;
 }
 
@@ -143,6 +149,12 @@ section {
     background-color: white;
     padding: 10px;
     border-radius: 25px;
+}
+
+#join-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (min-width: 725px) {
