@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homepage for Bountiful Foods">
+    <meta name="author" content="Cameron Crook">
+    <link rel="icon" type="image/png" href="images/fruit-icon.png">
+    <title>Bountiful Foods</title>
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="drink-icon-div">
+        <img id="drink-icon" src="images/smoothie.png" alt="Drink Icon" width="50px">
+    </div>
+    
+
+    <header class="secondary-bg">
+        <nav>
+            <a href="#">Home</a>
+            <a href="fresh.html">Fresh</a>
+            <a href="#">About Us</a>
+        </nav>
+
+        <div>
+            <img src="images/fruit-icon.png" alt="Fruit Icon" width="200px">
+            <h1>Bountiful Foods</h1>
+        </div>
+    </header>
+    <main id="home-main">
+        <section id="area-section">
+            <h2>California Grown</h2>
+            <p>Ventura is a California coastal city, northwest of Los Angeles. It’s known for its beaches, like San Buenaventura State Beach, with long, wooden Ventura Pier. Surfer's Point is popular for surfing and windsurfing. Landmarks on downtown’s Main Street include the Mission San Buenaventura, with its 1809 church. Boats depart Ventura Harbor for Channel Islands National Park, a habitat for rare island foxes and scrub jays.</p>
+        </section>
+        <section id="mix-drink-section">
+            <div id="drink-img-div">
+                <img id="drinks-img" src="images/fruit-drinks.jpeg" width="200" alt="Fruit Drinks">
+            </div>
+            <div id="drink-action">
+                <h2>Mix Your Own Drink</h2>
+
+                <div>
+                    <p>Instructions:</p>
+                    <hr>
+                    <ol>
+                        <li>Enter Personal Information</li>
+                        <li>Combine up to 3 different fruits</li>
+                        <li>Enjoy!</li>
+                    </ol>
+                </div>
+
+                <div id="button-div">
+                    <a href="fresh.html">Mix Drink</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact-section">
+            <div>
+                <h2>Contact Us!</h2>
+                <p class="contact-header">Phone</p>
+                <p class="contact-info">(335) 429-7560</p>
+                <p class="contact-header">Email</p>
+                <p class="contact-info">bountifulfoods@gmail.com</p>
+                <p class="contact-header">Address</p>
+                <p class="contact-info">2137 E Harbor Blvd, Ventura, CA 93001</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26378.367583232215!2d-119.29761342158032!3d34.266504726086254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e9ad25d9fc8301%3A0x97b4f45b7bd22c7d!2sMcDonald&#39;s!5e0!3m2!1sen!2sus!4v1679427850653!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="social-media-section">
+            <h2>Visit Us on Social Media</h2>
+            <div>
+                <img src="images/instagram-logo.png" alt="Instagram Logo" width="75">
+                <img src="images/facebook-logo.png" alt="Facebook Logo" width="75">
+                <img src="images/twitter-logo.png" alt="Twitter Logo" width="75">
+            </div>
+        </section>
+        <section id="weather-section">
+            <h2>Weather</h2>
+            <div id="conditions-logo-div">
+                <img id="conditions-logo" alt="Conditions Logo" width="100">
+            </div>
+            <div id="weather-data">
+                <div>
+                    <p>Tempurature: <span id="temp">25</span></p>
+                    <p>Conditions: <span id="conditions">Cold</span></p>
+                    <p>Humidy: <span id="humidity">22%</span></p>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">3 Day Forcast</th>
+                        </tr>
+                        <tr>
+                            <th>Day</th>
+                            <th>Low</th>
+                            <th>High</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="day1-date"></th>
+                            <td id="day1-low"></td>
+                            <td id="day1-high"></td>
+                        </tr>
+                        <tr>
+                            <th id="day2-date"></th>
+                            <td id="day2-low"></td>
+                            <td id="day2-high"></td>
+                        </tr>
+                        <tr>
+                            <th id="day3-date"></th>
+                            <td id="day3-low"></td>
+                            <td id="day3-high"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="primary-bg">
+        <p>&copy; 2023 Bountiful Foods</p>
+        <p>Last Modified: <span id="modified"></span></p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
