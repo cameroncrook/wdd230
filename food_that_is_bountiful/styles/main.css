@@ -152,7 +152,7 @@ header img {
 /* Area Section */
 #area-section {
     height: 100vh;
-    background-image: url('/food_that_is_bountiful/images/California-agriculture.webp');
+    background-image: url('../images/California-agriculture.webp');
     background-position: 0;
     padding: 25px;
     color: white;

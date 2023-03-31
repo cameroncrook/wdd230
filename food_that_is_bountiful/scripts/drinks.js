@@ -13,14 +13,19 @@ async function displayDrinks() {
 }
 
 function getValues(fruitData) {
-    const orders = JSON.parse(localStorage.getItem('orders'));
-
     let drinkDiv = document.querySelector('#drinks');
     drinkDiv.innerHTML = '';
+    let orders = [];
+
+    if (!localStorage.getItem('orders')) {
+        orders = [];
+    } else {
+        orders = JSON.parse(localStorage.getItem('orders'));
+    }
 
     let drinkCounter = document.querySelector('#drink-counter');
     
-    if (orders.length < 1 || ! localStorage.getItem('orders')) {
+    if (orders.length < 1) {
         drinkCounter.classList.add('bravo-six');
 
         let message = document.createElement('p');
