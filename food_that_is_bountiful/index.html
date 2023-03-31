@@ -13,14 +13,22 @@
 <body>
     <div id="drink-icon-div">
         <img id="drink-icon" src="images/smoothie.png" alt="Drink Icon" width="50px">
+        <p id="drink-counter" class="bravo-six">0</p>
+
+        <div id="drinks" class="bravo-six">
+
+        </div>
     </div>
     
 
     <header class="secondary-bg">
         <nav>
-            <a href="#">Home</a>
-            <a href="fresh.html">Fresh</a>
-            <a href="#">About Us</a>
+            <a id="ham" href="#">&#9776;</a>
+            <div id="ham-links" class="ham-responsive">
+                <a href="#">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <a href="about.html">About Us</a>
+            </div>
         </nav>
 
         <div>
@@ -123,6 +131,7 @@
         <p>&copy; 2023 Bountiful Foods</p>
         <p>Last Modified: <span id="modified"></span></p>
     </footer>
+    <script src="scripts/drinks.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

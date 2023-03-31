@@ -25,6 +25,10 @@ img {
     background-color: #D9F4C7;
 }
 
+.bravo-six {
+    display: none;
+}
+
 #drink-icon-div {
     position: -webkit-sticky;
     position: sticky;
@@ -32,7 +36,67 @@ img {
     top: 25px;
     left: 25px;
     margin-right: 20px;
-    text-align: end;
+    text-align: center;
+}
+
+#drink-icon {
+    position: absolute;
+    top: 0px;
+    right: 4px;
+}
+
+#drink-icon:hover {
+    width: 53px;
+    cursor: pointer;
+}
+
+#drink-counter {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 15px;
+    background-color: gray;
+    border: solid;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+#drinks {
+    background-color: #F79595;
+    border: solid;
+    padding: 25px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    
+    max-width: 550px;
+    max-height: 70vh;
+
+    overflow: scroll;
+}
+
+#drinks div {
+    padding: 5px;
+    align-items: center;
+}
+
+#drinks button {
+    width: 40px;
+    height: 40px;
+}
+
+.message {
+    text-align: center;
+}
+
+.order-set {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* Header Styles */
@@ -40,9 +104,20 @@ header {
     padding: 15px;
 }
 
-header nav {
+.ham-responsive {
+    display: none !important;
+}
+
+#ham {
+    margin-left: 20px;
+    font-size: 40px !important;
+}
+
+#ham-links {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
     padding: 30px;
 }
 
@@ -100,6 +175,21 @@ header img {
 
 #mix-drink-section img {
     width: 100%;
+}
+
+#mix-drink-section a {
+    text-decoration: none;
+    color: black;
+    background-color: #27ADFF;
+    width: 150px;
+    padding: 10px;
+    border: solid;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#mix-drink-section a:hover {
+    background-color: #2789FF;
 }
 
 #drink-img-div {
@@ -251,6 +341,16 @@ form textarea {
     height: 60px;
 }
 
+form button {
+    width: 150px;
+    padding: 10px;
+    background-color: #27ADFF;
+}
+
+form button:hover {
+    background-color: #24a0edcd;
+}
+
 /* Nutriton Facts */
 #nutrition-facts {
     border: solid 3px;
@@ -290,7 +390,56 @@ form textarea {
     background-color: black;
 }
 
+#fresh-h1 {
+    margin: 20px;
+}
+
+/* about us page styles */
+#about-main section:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+#about-main h2 {
+    text-align: center;
+}
+
+#team-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    padding: 25px;
+}
+
+#team-section img {
+    height: 300px;
+}
+
+#team-section div {
+    text-align: center;
+}
+
+.crew-img-div {
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (min-width: 710px) {
+    /* Header Styles */
+    #ham {
+        display: none;
+    }
+
+    .ham-responsive {
+        display: flex !important;
+    }
+
+    #ham-links {
+        flex-direction: row;
+    }
+
     #home-main {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -354,10 +503,25 @@ form textarea {
     #nutrition-facts {
         width: 33%;
     }
+
+    #fresh-h1 {
+        text-align: center;
+    }
+
+    /* About us Page Styles */
+    #team-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (min-width: 1100px) {
     body {
         max-width: 1700px;
+    }
+
+    #team-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

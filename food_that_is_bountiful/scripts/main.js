@@ -20,8 +20,8 @@ async function displayData() {
     let imageUrl = `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${data.currentConditions.icon}.svg`;
     conditionsImg.src = imageUrl;
     conditionsImg.alt = data.currentConditions.conditions;
-    tempEl.textContent = data.currentConditions.temp;
-    humidityEl.textContent = data.currentConditions.humidity;
+    tempEl.innerHTML = `${data.currentConditions.temp}&#176;F`;
+    humidityEl.textContent = `${data.currentConditions.humidity}%`;
     conditionsEl.textContent = data.currentConditions.conditions;
 
     // Assign Values to Forcast Table
@@ -30,8 +30,8 @@ async function displayData() {
         let day = getDay(date);
 
         document.querySelector(`#day${i}-date`).textContent = day;
-        document.querySelector(`#day${i}-low`).textContent = data.days[i].tempmin;
-        document.querySelector(`#day${i}-high`).textContent = data.days[i].tempmax;
+        document.querySelector(`#day${i}-low`).innerHTML = `${data.days[i].tempmin}&#176;F`;
+        document.querySelector(`#day${i}-high`).innerHTML = `${data.days[i].tempmax}&#176;F`;
     }
 }
 

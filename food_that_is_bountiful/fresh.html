@@ -13,12 +13,20 @@
 <body>
     <div id="drink-icon-div">
         <img id="drink-icon" src="images/smoothie.png" alt="Drink Icon" width="50px">
+        <p id="drink-counter" class="bravo-six">0</p>
+
+        <div id="drinks" class="bravo-six">
+
+        </div>
     </div>
     <header class="secondary-bg">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Fresh</a>
-            <a href="#">About Us</a>
+            <a id="ham" href="#">&#9776;</a>
+            <div id="ham-links" class="ham-responsive">
+                <a href="index.html">Home</a>
+                <a href="#">Fresh</a>
+                <a href="about.html">About Us</a>
+            </div>
         </nav>
 
         <div>
@@ -27,34 +35,38 @@
         </div>
     </header>
    
-    <h1>Build a Drink!</h1> 
+    <h1 id="fresh-h1">Build a Drink!</h1> 
     <main id="fresh-main">
-        <form>
+        <form id="form">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname" required>
+            <input type="text" id="fname" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" required>
 
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="tel" id="phone" required>
 
             <label for="furits">Pick Your Fruits</label>
             <div id="select-div">
-                <select name="fruit-1" id="fruit-1">
+                <select id="fruit-1">
                     <option value="NA">None</option>
                 </select>
-                <select name="fruit-2" id="fruit-2">
+                <select id="fruit-2">
                     <option value="NA">None</option>
                 </select>
-                <select name="fruit-3" id="fruit-3">
+                <select id="fruit-3">
                     <option value="NA">None</option>
                 </select>
             </div>
 
             <label for="special">Additional Instructions</label>
-            <textarea id="special" name="special"></textarea>
+            <textarea id="special"></textarea>
+            <input id="current-date" type="hidden">
+
+            <button type="submit">Submit Order</button>
         </form>
+        <p id="log"></p>
 
         <section id="nutrition-facts">
             <!-- carbohydrates, protein, fat, sugar, and calories -->
@@ -63,7 +75,7 @@
             <p>1 servings per container</p>
             <div class="nutrition-set">
                 <p><strong>Serving size</strong></p>
-                <p><strong>1 drink</strong></p>
+                <p><strong>20 (oz)</strong></p>
             </div>
             <div class="line-bg"></div>
             <p><strong>Amount per serving</strong></p>
@@ -97,5 +109,7 @@
         <p>&copy; 2023 Bountiful Foods</p>
         <p>Last Modified: <span id="modified"></span></p>
     </footer>
+    <script src="scripts/drinks.js"></script>
+    <script src="scripts/fresh.js"></script>
 </body>
 </html>
